@@ -1,0 +1,8 @@
+[project]
+name = Portfolio
+
+[servers.production]
+name = Production
+enabled = yes
+default = yes
+target = rsync://server/path/to/folder

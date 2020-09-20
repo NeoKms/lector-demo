@@ -1,0 +1,27 @@
+<!doctype html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
+<title>{% block title %}Welcome{% endblock %} — portfolio</title>
+<body>
+  <header>
+    <h1>Веб-портфолио Жигульского Владислава</h1>
+    <nav>
+      <ul class="nav navbar-nav">
+        <li{% if this._path == '/' %} class="active"{% endif
+          %}><a href="{{ '/'|url }}">Главная</a></li>
+        {% for href, title in [
+          ['/blog', 'Портфолио'],
+        ] %}
+          <li{% if this.is_child_of(href) %} class="active"{% endif
+            %}><a href="{{ href|url }}">{{ title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
+  <div class="page">
+    {% block body %}{% endblock %}
+  </div>
+  <footer>
+    &copy; Copyright 2020 by zhigulskiy v.e.
+  </footer>
+</body>

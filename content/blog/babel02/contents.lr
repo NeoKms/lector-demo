@@ -1,0 +1,22 @@
+title: babel02
+---
+pub_date: 2020-09-20
+---
+author: Жигульский В.Е.
+
+---
+task:
+https://codepen.io/gossoudarev/pen/zWWBvd
+
+Здесь используется pipeline-оператор и показаны значения,
+      которые должны быть получены.
+      Используйте Babel.registerPreset в коде k1, чтобы
+      обеспечить возможность выполнения кода k2
+
+Ссылка на задание:
+
+https://kodaktor.ru/babel02
+
+---
+body:
+https://kodaktor.ru/babel02_34065

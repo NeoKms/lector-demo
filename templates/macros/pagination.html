@@ -1,0 +1,17 @@
+{% macro render_pagination(pagination) %}
+  <div class="pagination">
+    {% if pagination.has_prev %}
+      <a href="{{ pagination.prev|url }}">&laquo; Предыдущая</a>
+    {% else %}
+      <span class="disabled">&laquo; Предыдущая</span>
+    {% endif %}
+    | Страница {{ pagination.page }} из {{pagination.pages}} |
+    {% if pagination.has_next %}
+      <a href="{{ pagination.next|url }}">Следующая &raquo;</a>
+    {% else %}
+      <span class="disabled">Следующая &raquo;</span>
+    {% endif %}
+    <br>
+    Элементы {{ (pagination.page-1)*pagination.per_page }}-{{ pagination.page*pagination.per_page }} из {{pagination.total}}
+  </div>
+{% endmacro %}

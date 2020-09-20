@@ -1,5 +1,5 @@
 # lector-demo
-## Для старта: pip3 install Lektor
+## Зависимости: Lektor
 ### Сбилдить в свою папку: lektor build --output-path my-folder
 ### Автобитл на гитхабпейжес: lektor build && lektor deploy
 ### Автоматически билдит в ветке "gh-pages".

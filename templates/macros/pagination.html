@@ -12,6 +12,6 @@
       <span class="disabled">Следующая &raquo;</span>
     {% endif %}
     <br>
-    Элементы {{ (pagination.page-1)*pagination.per_page }}-{{ pagination.page*pagination.per_page }} из {{pagination.total}}
+    Элементы {{ ((pagination.page-1)*pagination.per_page)+1 }}-{{ pagination.page*pagination.per_page }} из {{pagination.total}}
   </div>
 {% endmacro %}
